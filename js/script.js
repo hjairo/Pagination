@@ -37,7 +37,8 @@ const appendPageLinks = (list) => {
 			const eventTarget = event.target;
 			const pagNumber = parseInt(eventTarget.textContent);
 			showPage(list, pagNumber);
-			document.querySelector(`.active`).classList.remove("active");			eventTarget.classList.add("active");
+			document.querySelector(`.active`).classList.remove("active");
+			eventTarget.classList.add("active");
 		});
 	};
 };
