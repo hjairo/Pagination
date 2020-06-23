@@ -35,10 +35,10 @@ const appendPageLinks = (list) => {
 		a.textContent = i;
 		a.addEventListener("click", (event) => {
 			showPage(list, i);
-			console.log(showPage(list, i));
 			document.querySelector(`.active`).classList.remove("active");
 			const eventTarget = event.target;
 			eventTarget.classList.add("active");
+			console.log(showPage(list, i));
 		});
 	};
 };
