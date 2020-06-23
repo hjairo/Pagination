@@ -34,11 +34,10 @@ const appendPageLinks = (list) => {
 		a.href = "#";
 		a.textContent = i;
 		a.addEventListener("click", (event) => {
-			showPage(list, i);
-			document.querySelector(`.active`).classList.remove("active");
 			const eventTarget = event.target;
-			eventTarget.classList.add("active");
-			console.log(showPage(list, i));
+			const pagNumber = parseInt(eventTarget.textContent);
+			showPage(list, pagNumber);
+			document.querySelector(`.active`).classList.remove("active");			eventTarget.classList.add("active");
 		});
 	};
 };
