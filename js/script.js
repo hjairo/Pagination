@@ -89,6 +89,7 @@ const searchResults = () => {
 	showPage(results, 1);
 	appendPageLinks(results);
 };
+
 // eventListeners for the searchBar and searchButton
 searchBar.addEventListener("keyup", searchResults);
 searchButton.addEventListener("submit", searchResults);
