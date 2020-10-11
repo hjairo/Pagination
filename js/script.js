@@ -1,5 +1,3 @@
-// Pagination Project - Jairo Hernandez
-
 // global variables
 const studentList = document.querySelectorAll("li");
 const itemsPerPage = 10;
